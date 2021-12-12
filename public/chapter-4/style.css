@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: none;
+}
+
+body {
+    background-image: url(lantaiwc.jpg);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#heading {
+    font-size: 2em;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.score {
+    font-size: 1.3em;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.holesCont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    justify-items: center;
+}
+
+.hole {
+    position: relative;
+    height: 80px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(karat.jpg);
+    overflow: hidden;
+}
+
+.mole {
+    position: absolute;
+    z-index: 1;
+    height: 125px;
+    bottom: -20;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: appear 0.3s linear;
+    pointer-events: none;
+}
+
+@keyframes appear {
+    from {
+        bottom: -125px;
+    }
+    to {
+        bottom: 0;
+    }
+}
+
+.buttons {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.buttons button {
+    padding: 15px 45px;
+    border: 2px solid white;
+    color: black;
+    border-radius: 3px;
+    outline: none;
+}
+
+button.stop {
+    display: none;
+}
+
+.cursor img {
+    position: absolute;
+    height: 170px;
+    z-index: 2;
+    transform: translate(-60px, -75px);
+    pointer-events: none;
+}
+
+@keyframes hit {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-30deg);
+    }
+}

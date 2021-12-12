@@ -1,0 +1,38 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(lantaiwc.jpg);
+  }
+  @media (min-width: 860px){
+    .canvas {
+      margin: 0 150px;
+    }}
+  
+  .canvas {
+    background-color: #cce7e8;
+    margin: auto;
+    padding-top: 3px;
+    height: 50vh;
+    width: 40vh;
+  }
+
+  #heading {
+      font-size: 20px;
+      padding-bottom: -50px;
+  }
+
+  form {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  #tombol {
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    font-weight: 700;
+    background-color: #157eab;
+    color: white;
+   
+  }
