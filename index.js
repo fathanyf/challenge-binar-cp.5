@@ -4,6 +4,8 @@ const port = 8000;
 const path = require('path');
 const userList = require("./user.json");
 
+let posts = require("./user.json");
+
 const router = require("./router");
 app.use(router);
 
@@ -70,3 +72,27 @@ function notAuthen(req, res, next) {
 
     return res.redirect('/')
 }
+
+app.get("/api/v1/user", (req, res) => {
+    res.status(200).json(posts);
+  });
+  
+  app.get("/api/v1/user/:id", (req, res) => {
+    const post = posts.find((i) => i.id === +req.params.id);
+    res.status(200).json(postsr);
+  });
+  
+  app.post("/api/v1/user", (req, res) => {
+    const { username, password } = req.body;
+  
+    const id = posts[posts.length - 1].id + 1;
+    const post = {
+      id,
+      username,
+      password,
+    };
+  
+    posts.push(post);
+  
+    res.status(201).json(posts);
+  });
