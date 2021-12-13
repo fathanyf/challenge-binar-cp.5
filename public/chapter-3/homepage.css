@@ -1,0 +1,176 @@
+
+
+.banner {
+  width: 100%;
+  height: 130vh;
+  background-image: url(https://besthqwallpapers.com/Uploads/5-12-2020/148641/thumb2-uss-michael-monsoor-sea-sunset-ddg-1001-guided-missile-destroyer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  margin-top: -3%;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+
+.logo {
+  width: 5%;
+  height: 5%;
+  
+}
+
+.navbar-fluid {
+  width: 100%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: greenyellow;
+  background-color: darkkhaki;
+} 
+
+.banner-text {
+  text-align: center; 
+  color: whitesmoke;
+  padding: 5px 5px 5px 5px;
+  
+}
+
+.banner-text h1 {
+  font-size: 20px;
+  margin: auto;
+
+}
+
+.banner-text p {
+  font-size: 12px;
+  padding-top: -250px;
+  margin: auto;
+}
+
+.special-feature {
+  width: 100%;
+  height: 130vh;
+  background-image: url(https://prod-c2i.s3.amazonaws.com/articles/15550616835cb05bb36d42f.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.sf-title-text {
+  padding: 5px 5px 5px 5px;
+}
+
+.jenis-pertempuran {
+  margin-top: 10%;
+}
+
+.fitur {
+  width: 100%;
+  height: 130vh;
+  background-image: url(https://videohive.img.customer.envatousercontent.com/files/c765aab3-8ce4-41d5-ac8d-fc9bb81e9105/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=afea23bbaf6714a6dcdeba641604c131);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.penjelasan-fitur {
+  padding: 5px 5px 5px 5px
+}
+
+.container-fitur-game {
+  margin-top: 10%;
+}
+
+.peta-perang {
+  width: 100%;
+  height: 130vh;
+  background-image: url(https://i0.wp.com/themilitaryleader.com/wp-content/uploads/2019/11/IMG951846.jpg?fit=1280%2C960&ssl=1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+
+.judul-peta {
+  margin: 5px 20px 5px 20px;
+}
+
+.container-peta {
+  margin-top: 10%;
+}
+
+.carousel-inner {
+  height: 500px;
+  width: 50%;
+}
+
+
+.ratings {
+  width: 100%;
+  height: 140vh;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c2/Russian_cruiser_Marshal_Ustinov_MOD_45164874.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.rating-text {
+  padding: 5px 5px 5px 5px
+}
+
+.rating {
+  margin-top: 10%;
+}
+
+.requirements {
+  width: 100%;
+  height: 130vh;
+  background-image: url(https://dras.in/wp-content/uploads/2021/01/maxresdefault.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.requirements-text {
+  padding: 5px 5px 5px 5px
+}
+
+.container-sisreq {
+  margin-top: 10%;
+}
+
+.footer {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px 10px 5px 5px;
+}
+
