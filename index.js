@@ -79,7 +79,7 @@ app.get("/api/v1/user", (req, res) => {
   
   app.get("/api/v1/user/:id", (req, res) => {
     const post = posts.find((i) => i.id === +req.params.id);
-    res.status(200).json(postsr);
+    res.status(200).json(posts);
   });
   
   app.post("/api/v1/user", (req, res) => {
@@ -96,3 +96,7 @@ app.get("/api/v1/user", (req, res) => {
   
     res.status(201).json(posts);
   });
+
+  app.use(function (req, res, next) {
+	res.status(404).send("Ups, Anda Kesasar, silahkan balik kembali atau ketik alamat sesuai yang lebih tepat.");
+});
