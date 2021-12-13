@@ -6,6 +6,9 @@ router.use(function timeLog(req, res, next) {
   next();
 });
 
-
+router.use('/user/:id', function (req, res, next) {
+    console.log('Request Type:', req.method)
+    next()
+  })
 
 module.exports = router;

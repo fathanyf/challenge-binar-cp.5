@@ -1,9 +1,49 @@
-<h1>Selamat Datang di Challenge 5</h1>
+<style>
 
-<a href="/chapter-3"><button>chapter-3</button></a>
-<a href="/chapter-4"><button>chapter-4</button></a>
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.judul {
+    padding-left: 30%;
+}
+
+.judul .penjelasan-judul {
+    margin-top: -10;
+    padding-left: 20%;
+}
+
+.titel-home{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: chocolate;
+    padding: 0 50 0 50;
+}   
+ .container {
+        padding-left: 45%;
+        padding-top: 10;
+    }
+
+.btn-logout {
+    padding-left: 49%;
+    padding-top: 15;
+}
+    
+    </style>
+
+<div class="judul">
+    <h1 class="titel-home">Selamat Datang di Challenge 5</h1>
+    <br>
+    <p class="penjelasan-judul">Oleh Fathan Yuda F.</p>
+</div>
+
+<div class="container">
+    <a href="/chapter-3"><button>chapter-3</button></a>
+    <a href="/chapter-4"><button>chapter-4</button></a>
+</div>
+
+
 <% if (authen) { %>
-    <form action="/logout" method="POST">
-        <button type="submit">Logout</button>
+    <form action="/logout" method="POST" class="btn-logout">
+        <button type="submit" >Logout</button>
     </form>
 <% } %>

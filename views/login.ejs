@@ -1,16 +1,53 @@
+<style>
 
-<h1>SELAMAT DATANG</h1>
-<br>
-<h3>Silahkan Login</h3>
+.judul {
+    padding-left: 39%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: burlywood;
+}
 
-<form action="/login" method="POST">
-    <div>
-        <label for="username">Username</label>
-        <input type="name" id="username" name="username" required>
-    </div>
-    <div>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-    </div>
-    <button type="submit">Login</button>
-</form>
+.judul .penjelasan-judul {
+    padding-left: 8%;
+    padding-top: -30%;
+}
+
+.login{
+    padding-left: 39%;
+}
+
+.login .btn-username {
+    padding-bottom: 15px;
+}
+
+.login .btn-password {
+    padding-bottom: 15px;
+}
+
+.login .btn-login {
+    padding-left: 15%;
+}
+</style>
+
+<div class="judul">
+    <h1 class="judul-utama">SELAMAT DATANG</h1>
+    <br>
+    <h3 class="penjelasan-judul">Silahkan Login</h3>
+    
+</div>
+
+<div class="login">
+    <form action="/login" method="POST">
+        <div class="btn-username">
+            <label for="username">Username</label>
+            <input type="name" id="username" name="username" required>
+        </div>
+        <div class="btn-password">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="btn-login">
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</div>
+
